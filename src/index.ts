@@ -64,7 +64,7 @@ function deleteNodeModules(projectsDir: string) {
                   try {
                     log.stdout.clear();
                     console.log(greenBright(`Deleting: ${path}`));
-                    // await rm(path, { recursive: true });
+                    await rm(path, { recursive: true });
                     deletedNum += 1;
                   } catch (error) {
                     log.stdout.clear();
