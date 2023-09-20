@@ -36,7 +36,7 @@ async function main() {
   console.log(
     blueBright("\n\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
   );
-  console.log(blueBright(`Deleted ${deletedNum} node_module(s).`));
+  console.log(blueBright(`Deleted ${deletedNum} node_modules(s).`));
   console.log(
     blueBright(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n")
   );
@@ -50,7 +50,7 @@ function deleteNodeModules(projectsDir: string) {
       const list = await loopDir(projectsDir);
       log.stdout(``);
       log.stdout.clear();
-      console.log(orange(`Found ${list.length} node_module(s)`));
+      console.log(orange(`Found ${list.length} node_modules(s)`));
       if (list.length > 0) {
         input.question(
           orange("Are you sure you want to delete them? (y/n): "),

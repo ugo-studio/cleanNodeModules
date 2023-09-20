@@ -9,7 +9,7 @@
   "type": "module",
   "scripts": {
     "build": "npx tsc",
-    "dev": "npx tsc && node dist/testDir.js && node dist/test.js && node dist/index.js",
+    "dev": "npx tsc && node dist/testDir.js && node dist/createTestModules.js && node dist/index.js",
     "start": "npx tsc && node dist/prodDir.js && node dist/index.js"
   },
   "devDependencies": {
