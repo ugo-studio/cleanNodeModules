@@ -111,6 +111,9 @@ async function loopDir(dir: string) {
         !isFile &&
         !path.endsWith("\\target\\") &&
         !path.endsWith("\\build\\") &&
+        !path.endsWith("\\flutter\\") &&
+        !path.endsWith("\\smali\\") &&
+        !path.endsWith("\\smali_classes2\\") &&
         !path.endsWith("\\.expo\\") &&
         !path.endsWith("\\.idea\\") &&
         !path.endsWith("\\.git\\")
