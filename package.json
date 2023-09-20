@@ -1,0 +1,24 @@
+{
+  "name": "clean-node-modules",
+  "version": "1.0.0",
+  "description": "clean node modules",
+  "main": "dist/index.js",
+  "author": "ugochukwu david",
+  "license": "MIT",
+  "repository": "https://github.com/ugo-studio/clean-node-modules",
+  "type": "module",
+  "scripts": {
+    "build": "npx tsc",
+    "dev": "npx tsc && node dist/testDir.js && node dist/test.js && node dist/index.js",
+    "start": "npx tsc && node dist/prodDir.js && node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.2",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@types/single-line-log": "^1.1.0",
+    "chalk": "^5.3.0",
+    "single-line-log": "^1.1.2"
+  }
+}
